@@ -2,30 +2,25 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
 
 
-
-    <TextView
-
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/dice_image"
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="50sp"
-        android:background="@color/colorAccent"
-        android:text="Hello World"
-        android:gravity="center"/>
-
-    <TextView
-
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/empty_dice" />
+
+    <Button
         android:layout_width="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="50sp"
-        android:background="@color/colorAccent"
-        android:text="Hello World"
-        android:gravity="center"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:text="@string/roll"
+        android:id="@+id/roll_button" />
+
 
 
 
